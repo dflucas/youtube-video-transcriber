@@ -10,7 +10,7 @@ This Python project allows you to transcribe YouTube videos using **OpenAI's Whi
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/your-username/youtube-video-transcriber.git](https://github.com/your-username/youtube-video-transcriber.git)
+git clone https://github.com/dflucas/youtube-video-transcriber
 cd youtube-video-transcriber
 ```
 
@@ -23,9 +23,9 @@ pip install yt-dlp openai-whisper youtube-transcript-api
 
 On Windows, download it from ffmpeg.org.
 
-On macOS, use Homebrew: ```bash brew install ffmpeg```
+On macOS, use Homebrew: ```brew install ffmpeg```
 
-On Linux (Debian/Ubuntu), use apt: ```bash sudo apt install ffmpeg```
+On Linux (Debian/Ubuntu), use apt: ```sudo apt install ffmpeg```
 
 ## Run the script:
 
@@ -35,7 +35,7 @@ python youtube_to_text.py
 You'll be prompted to enter a YouTube video URL. The script will:
 - Try to download subtitles via the YouTube Transcript API.
 - If unavailable, it will download the video’s audio and transcribe it with Whisper.
-- Save the transcript as a ```bash.txt``` file in the project folder.
+- Save the transcript as a ```.txt``` file in the project folder.
 
 ## 📄 Example Output
 ```bash
@@ -63,4 +63,5 @@ Whisper is a general-purpose speech recognition model by OpenAI trained on a lar
 More info: https://github.com/openai/whisper
 
 ## License
+MIT License. See [LICENSE](https://choosealicense.com/licenses/mit/) for more information.
 
