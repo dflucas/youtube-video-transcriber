@@ -1,54 +1,61 @@
-# 🎬 YouTube Video Transcriber
+🎬 YouTube Video Transcriber
 
-This Python project allows you to transcribe YouTube videos using **OpenAI's Whisper** or **YouTube's own subtitles** (when available).
+This Python project allows you to transcribe YouTube videos using OpenAI's Whisper or YouTube's own subtitles (when available).
 
-✅ Works on **Windows**, **macOS**, and **Linux**  
-🧠 Supports **Whisper AI** for local/offline transcription  
-⚡ Automatically fetches **YouTube captions** when available (faster)
+    ✅ Works on Windows, macOS, and Linux
 
----
+    🧠 Supports Whisper AI for local/offline transcription
 
-## 🔧 Features
+    ⚡ Automatically fetches YouTube captions when available (faster)
 
-- 🔍 Auto-detects and uses YouTube subtitles if available (manual or auto-generated)
-- 🧠 Falls back to Whisper AI transcription if no subtitles are found
-- ⚙️ Detects missing dependencies and provides usage instructions
-- 📁 Saves transcripts to `.txt` files named after the video title
-- 🖥️ Outputs transcript preview to terminal
+🔧 Features
 
----
+    Auto-detects and uses YouTube subtitles if available (manual or auto-generated).
 
-## 🚀 How to Use
+    Falls back to Whisper AI transcription if no subtitles are found.
 
-1. **Clone the repository:**
+    Detects missing dependencies and provides usage instructions.
 
-```bash
+    Saves transcripts to .txt files named after the video title.
+
+    Outputs a transcript preview to the terminal.
+
+🚀 How to Use
+
+    Clone the repository:
+
+Bash
+
 git clone https://github.com/your-username/youtube-video-transcriber.git
 cd youtube-video-transcriber
-pip install yt-dlp openai-whisper youtube-transcript-api
+
     Install dependencies:
+
+Bash
 
 pip install yt-dlp openai-whisper youtube-transcript-api
 
     💡 You also need ffmpeg for Whisper to work properly.
 
-        On Windows, download it from: https://ffmpeg.org/download.html
+    On Windows, download it from ffmpeg.org.
 
-        On macOS: brew install ffmpeg
+    On macOS, use Homebrew: brew install ffmpeg
 
-        On Linux (Debian/Ubuntu): sudo apt install ffmpeg
+    On Linux (Debian/Ubuntu), use apt: sudo apt install ffmpeg
 
     Run the script:
 
+Bash
+
 python transcribe.py
 
-You’ll be prompted to enter a YouTube video URL. The script will:
+You'll be prompted to enter a YouTube video URL. The script will:
 
-    Try to download subtitles via the YouTube Transcript API
+    Try to download subtitles via the YouTube Transcript API.
 
-    If unavailable, download the video’s audio and transcribe it with Whisper
+    If unavailable, it will download the video's audio and transcribe it with Whisper.
 
-    Save the transcript as a .txt file in the project folder
+    Save the transcript as a .txt file in the project folder.
 
 📄 Example Output
 
@@ -74,9 +81,7 @@ Welcome to this crash course on Python...
 Whisper is a general-purpose speech recognition model by OpenAI trained on a large dataset of multilingual and multitask supervised data collected from the web.
 
 More info: https://github.com/openai/whisper
+
 📜 License
 
 MIT License. See LICENSE for more information.
-
-
----
