@@ -8,7 +8,7 @@ url = sys.argv[1]
 filename = "audio.wav"
 
 # Initialize the OpenAI client with your API key
-client = OpenAI(api_key=<OPENAI_API_KEY>) 
+client = OpenAI(api_key="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") 
 
 # Download the YouTube video using pytubefix
 yt = pytubefix.YouTube(url)
@@ -48,5 +48,5 @@ completion = client.chat.completions.create(
 )
 
 # Save the summary to a markdown file
-with open("resumo.md", "w") as md:
+with open("summary.md", "w") as md:
     md.write(completion.choices[0].message.content)
