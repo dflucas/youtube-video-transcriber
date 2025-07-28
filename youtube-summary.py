@@ -8,7 +8,7 @@ url = sys.argv[1]
 filename = "audio.wav"
 
 # Initialize the OpenAI client with your API key
-client = OpenAI(api_key="") 
+client = OpenAI(api_key="OPENAI_API_KEY") 
 
 # Download the YouTube video using pytubefix
 yt = pytubefix.YouTube(url)
